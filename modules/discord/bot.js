@@ -1130,7 +1130,7 @@ client.on('clientReady', async () => {
 			let activityText;
 			switch (switchSetActivity % 2) {
 				case 1:
-					client.user.setActivity(`${candle.checker() || '🎲'}bothelp 🧀🧀🧀``);
+					client.user.setActivity(`${candle.checker() || '🎲'}bothelp 🧀🧀🧀`);
 					break;
 				default:
 					activityText = await count2();
