@@ -1113,7 +1113,7 @@ client.on('clientReady', async () => {
 	}
 	initInteractionCommands();
 	//	if (shardid === 0) getSchedule();
-	client.user.setActivity(`${candle.checker() || '🌼'}bothelp | hktrpg.com🍎`);
+	client.user.setActivity(`${candle.checker() || '🎲'}bothelp 🧀🧀🧀`);
 	console.log(`[Discord Bot #${shardid}] Logged in as ${client.user.tag}!`);
 	client.cluster.triggerReady();
 	let switchSetActivity = 0;
@@ -1130,7 +1130,7 @@ client.on('clientReady', async () => {
 			let activityText;
 			switch (switchSetActivity % 2) {
 				case 1:
-					client.user.setActivity(`${candle.checker() || '🌼'}bothelp | hktrpg.com🍎`);
+					client.user.setActivity(`${candle.checker() || '🎲'}bothelp 🧀🧀🧀``);
 					break;
 				default:
 					activityText = await count2();
@@ -1138,7 +1138,7 @@ client.on('clientReady', async () => {
 						client.user.setActivity(activityText);
 					} else {
 						console.warn('count2() 返回無效活動文字:', activityText);
-						client.user.setActivity('🌼bothelp | hktrpg.com🍎');
+						client.user.setActivity('🎲bothelp 🧀🧀🧀');
 					}
 					break;
 			}
@@ -1146,7 +1146,7 @@ client.on('clientReady', async () => {
 		} catch (error) {
 			console.error('設定活動狀態時發生錯誤:', error);
 			try {
-				client.user.setActivity('🌼bothelp | hktrpg.com🍎');
+				client.user.setActivity('🎲bothelp 🧀🧀🧀');
 			} catch (fallbackError) {
 				console.error('設定備用活動狀態也失敗:', fallbackError);
 			}
